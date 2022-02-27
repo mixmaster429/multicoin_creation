@@ -1,0 +1,6 @@
+export const SALT_WORK_FACTOR = 10
+export const JWT_EXPIRED_IN = 2592000
+export const RESET_PASSWORD_EXPIRED_IN = 300
+export const VERIFICATION_EMAIL_TOKEN_EXPIRED_IN = 21600 //6 hours
+export const VERIFICATION_CODE_LENGTH = 4
+export const PASSWORD_LENGTH = 8

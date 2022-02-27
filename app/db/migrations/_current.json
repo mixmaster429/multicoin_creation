@@ -1,0 +1,353 @@
+{
+    "tables": {
+        "banners": {
+            "tableName": "banners",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "tokenid": {
+                    "field": "tokenid",
+                    "seqType": "Sequelize.STRING"
+                },
+                "title": {
+                    "field": "title",
+                    "seqType": "Sequelize.STRING"
+                },
+                "description": {
+                    "field": "description",
+                    "seqType": "Sequelize.STRING"
+                },
+                "buttonTitle": {
+                    "field": "button_title",
+                    "seqType": "Sequelize.STRING"
+                },
+                "buttonLink": {
+                    "field": "button_link",
+                    "seqType": "Sequelize.STRING"
+                },
+                "endDate": {
+                    "field": "end_date",
+                    "seqType": "Sequelize.DATE"
+                },
+                "deactivated": {
+                    "field": "deactivated",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "created_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updated_at",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "ratings": {
+            "tableName": "ratings",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "tokenid": {
+                    "field": "tokenid",
+                    "seqType": "Sequelize.STRING"
+                },
+                "userid": {
+                    "field": "userid",
+                    "seqType": "Sequelize.STRING"
+                },
+                "action": {
+                    "field": "action",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "created_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updated_at",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "tokens": {
+            "tableName": "tokens",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "userid": {
+                    "field": "userid",
+                    "seqType": "Sequelize.STRING"
+                },
+                "tokenName": {
+                    "field": "token_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "tokenSymbol": {
+                    "field": "token_symbol",
+                    "seqType": "Sequelize.STRING"
+                },
+                "decimal": {
+                    "field": "decimal",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "network": {
+                    "field": "network",
+                    "seqType": "Sequelize.STRING"
+                },
+                "website": {
+                    "field": "website",
+                    "seqType": "Sequelize.STRING"
+                },
+                "whitepaper": {
+                    "field": "whitepaper",
+                    "seqType": "Sequelize.STRING"
+                },
+                "description": {
+                    "field": "description",
+                    "seqType": "Sequelize.STRING"
+                },
+                "logo": {
+                    "field": "logo",
+                    "seqType": "Sequelize.STRING"
+                },
+                "email": {
+                    "field": "email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "developers": {
+                    "field": "developers",
+                    "seqType": "Sequelize.STRING"
+                },
+                "audit": {
+                    "field": "audit",
+                    "seqType": "Sequelize.STRING"
+                },
+                "telegram": {
+                    "field": "telegram",
+                    "seqType": "Sequelize.STRING"
+                },
+                "twitter": {
+                    "field": "twitter",
+                    "seqType": "Sequelize.STRING"
+                },
+                "facebook": {
+                    "field": "facebook",
+                    "seqType": "Sequelize.STRING"
+                },
+                "instagram": {
+                    "field": "instagram",
+                    "seqType": "Sequelize.STRING"
+                },
+                "linkedin": {
+                    "field": "linkedin",
+                    "seqType": "Sequelize.STRING"
+                },
+                "coinmarketcap": {
+                    "field": "coinmarketcap",
+                    "seqType": "Sequelize.STRING"
+                },
+                "coingecko": {
+                    "field": "coingecko",
+                    "seqType": "Sequelize.STRING"
+                },
+                "subscription": {
+                    "field": "subscription",
+                    "seqType": "Sequelize.STRING"
+                },
+                "paymentTx": {
+                    "field": "payment_tx",
+                    "seqType": "Sequelize.STRING"
+                },
+                "verified": {
+                    "field": "verified",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "featured": {
+                    "field": "featured",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "socialChannel": {
+                    "field": "social_channel",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "endDate": {
+                    "field": "end_date",
+                    "seqType": "Sequelize.DATE"
+                },
+                "thumbUp": {
+                    "field": "thumb_up",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "thumbDown": {
+                    "field": "thumb_down",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "coingeckoApiID": {
+                    "field": "coingecko_api_i_d",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "created_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updated_at",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "users": {
+            "tableName": "users",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "username": {
+                    "field": "username",
+                    "seqType": "Sequelize.STRING"
+                },
+                "firstName": {
+                    "field": "first_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "lastName": {
+                    "field": "last_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "email": {
+                    "field": "email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "type": {
+                    "field": "type",
+                    "seqType": "Sequelize.STRING"
+                },
+                "password": {
+                    "field": "password",
+                    "seqType": "Sequelize.STRING"
+                },
+                "phoneNumber": {
+                    "field": "phone_number",
+                    "seqType": "Sequelize.STRING"
+                },
+                "emailVerified": {
+                    "defaultValue": {
+                        "value": false
+                    },
+                    "field": "email_verified",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "phoneVerified": {
+                    "defaultValue": {
+                        "value": false
+                    },
+                    "field": "phone_verified",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "seedPhrase": {
+                    "field": "seed_phrase",
+                    "seqType": "Sequelize.STRING"
+                },
+                "website": {
+                    "field": "website",
+                    "seqType": "Sequelize.STRING"
+                },
+                "telegram": {
+                    "field": "telegram",
+                    "seqType": "Sequelize.STRING"
+                },
+                "facebook": {
+                    "field": "facebook",
+                    "seqType": "Sequelize.STRING"
+                },
+                "twitter": {
+                    "field": "twitter",
+                    "seqType": "Sequelize.STRING"
+                },
+                "instagram": {
+                    "field": "instagram",
+                    "seqType": "Sequelize.STRING"
+                },
+                "linkedin": {
+                    "field": "linkedin",
+                    "seqType": "Sequelize.STRING"
+                },
+                "whitepaper": {
+                    "field": "whitepaper",
+                    "seqType": "Sequelize.STRING"
+                },
+                "deactivated": {
+                    "field": "deactivated",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "verified": {
+                    "defaultValue": {
+                        "value": false
+                    },
+                    "field": "verified",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "purchased": {
+                    "defaultValue": {
+                        "value": false
+                    },
+                    "field": "purchased",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "purchasedDate": {
+                    "field": "purchased_date",
+                    "seqType": "Sequelize.DATE"
+                },
+                "thumbUp": {
+                    "field": "thumb_up",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "thumbDown": {
+                    "field": "thumb_down",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "created_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updated_at",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 9
+}

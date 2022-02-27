@@ -1,0 +1,23 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./app"],
+        "alias": {
+          "@root": "./app",
+          "@controller": "./app/controllers",
+          "@middleware": "./app/middleware",
+          "@common": "./app/common"
+        }
+      }
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
+  ]
+}
